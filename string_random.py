@@ -15,6 +15,17 @@ def main(string: str):
                 
             
 if __name__ == "__main__":
-    string = input()
-    print(main(string))
+    print("Insert a string of characters with the range you want.", "To exit execution CTRL+BREAK")
+    try:
+        while(True):
+            string = input("String: ")
+            result=main(string)
+            if not result:
+                print("Not substring in string.")
+            else:
+                print(result)
+    except:
+        print("GoodBye!")
+    
+   
     
