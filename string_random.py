@@ -3,10 +3,10 @@ def main(string: str):
     check_substring = []
     for i in range(0, len(string)):
         substring_base = string[i:i+4]
-        if len(substring_base) == 4:
+        if len(substring_base) == 4 and not substring_base in check_substring:
             for j in range(0, len(string)):
                 aux = string[j:j+4]
-                if substring_base == aux and not substring_base in check_substring:
+                if substring_base == aux:
                     result[substring_base] = 1 if result.get(substring_base, None) == None else result[substring_base] + 1        
             check_substring.append(substring_base)
             if result[substring_base] <= 1:
