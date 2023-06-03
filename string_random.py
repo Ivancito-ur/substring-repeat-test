@@ -23,7 +23,8 @@ if __name__ == "__main__":
             if not result:
                 print("Not substring in string.")
             else:
-                print(result)
+                for x in result:
+                    print(x, " ", result[x])
     except:
         print("GoodBye!")
     
