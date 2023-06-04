@@ -33,7 +33,7 @@ You need install Python 3.9^
 Clone the project from repository in any folder:
 
 ```bash
-git clone https://gitlab.com/ivanuribe39/substring-repeat-test.git
+git clone https://github.com/Ivancito-ur/substring-repeat-test.git
 ```
 
 After you have cloned the project. Enter the project and run the following command to run the script.
